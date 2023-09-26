@@ -1,0 +1,516 @@
+/* ======== navbar start ======== */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  width: 1910px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: sticky;
+  background-color: rgba(30, 37, 57, 0.973);
+  top: 0;
+  z-index: 10;
+}
+.content ul li {
+  list-style: none;
+  display: inline;
+  margin: 20px;
+  font-size: 20px;
+}
+.content ul li a {
+  text-decoration: none;
+  color: white;
+}
+.content ul li a:hover {
+  color: aqua;
+}
+.content ul {
+  margin-top: 15px;
+}
+.content .name {
+  list-style: none;
+  font-size: 40px;
+  color: white;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+/* ========= navbar end ========== */
+/* ========= header start ========= */
+.header {
+  background-color: rgba(30, 37, 57, 0.973);
+  height: auto;
+  display: flex;
+}
+.content-a {
+  padding: 12% 2% 9.2% 10%;
+}
+.content-a p {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.content-a .a {
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+.content-a .d {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.content-a b {
+  color: aqua;
+}
+.header-logo a {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid aqua;
+  border-radius: 50%;
+  font-size: 20px;
+  color: aqua;
+  text-decoration: none;
+  margin: 5px;
+}
+.header-logo a i {
+  margin-top: 10px;
+  font-size: 28px;
+}
+.header-logo a:hover {
+  background-color: aqua;
+  color: #051b29;
+  box-shadow: 0px 0px 15px 3px #0ef;
+}
+.content-a button {
+  color: #051b29;
+  width: 150px;
+  height: 40px;
+  background-color: aqua;
+  border-radius: 15px;
+}
+.content-a button a{
+  text-decoration: none;
+}
+.content-a button:hover{
+  box-shadow: 0px 0px 15px 2px aqua;
+}
+.content-b {
+  margin: 10% 5% 0% 0%;
+}
+/*  =========== header end ========== */
+/*  ========= About-me start ========= */
+.about-me {
+  background-color: hsl(224, 16%, 27%);
+  height: auto;
+  display: flex;
+  padding: 0% 0% 8% 0%;
+}
+.about-me-a {
+  padding: 8% 0 0 8%;
+}
+.about-me-b {
+  margin: 12% 6% 0% 3%;
+}
+.about-me p {
+  color: white;
+}
+.about-me-b .a {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about-me-b b {
+  color: aqua;
+}
+.about-me-b .b {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.about-me-b .c {
+  color: white;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.about-me-b button {
+  color: #051b29;
+  width: 150px;
+  height: 40px;
+  background-color: aqua;
+  border-radius: 15px;
+}
+.about-me-b button:hover{
+  box-shadow: 0px 0px 15px 2px aqua;
+}
+/*  ========= About-me end ========= */
+/*  ========= My service start ========  */
+.my-service {
+  background-color: rgba(30, 37, 57, 0.973);
+  height: auto;
+}
+.my-service p {
+  color: white;
+  font-size: 40px;
+  padding: 4% 0% 0% 0%;
+  
+}
+.my-service b {
+  color: aqua;
+}
+/* * {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+} */
+.my-service-box {
+  margin-top: -50px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  margin: 0px 50px 50px 20px;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 30px 0px 30px 0px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.box::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: conic-gradient(transparent, transparent, #ff00d4);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: conic-gradient(transparent, transparent, #00ccff);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.box span {
+  position: absolute;
+  inset: 5px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0c1022;
+  z-index: 1;
+  flex-direction: column;
+}
+.box span h1 {
+  color: rgb(6, 240, 248);
+  font-weight: bold;
+  margin-top: -10px;
+}
+/* .box span h1:hover{
+    text-shadow: 2px 5px 40px rgb(6,240,248),
+    2px 5px 40px rgb(6,240,248),
+    2px 2px 40px rgb(6,240,248),
+    2px 2px 40px rgb(6,240,248);
+} */
+h2 {
+  margin-top: 20px;
+  color: white;
+}
+/*  ========= My service end ========  */
+/*  ========= my skills ========= -->*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.my-skills-nam{
+  padding-top: 50px;
+}
+.my-skills-nam span {
+  font-size: 40px;
+  color: white;
+}
+.my-skills-nam span b {
+  color: aqua;
+}
+.skillcontainer{
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: hsl(224, 16%, 27%);
+  height:auto;
+  padding-bottom: 100px;
+}
+.skillcontainer .wrapper{
+  margin: 5% 0 0 23%;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.skillcontainer .wrapper .card{
+  background: rgba(30, 37, 57, 0.973);
+  width: calc(33% - 20px);
+  height: 350px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper .card:hover{
+  background-color:hsl(224, 16%, 27%);
+  color: black;
+  transform: translateY(-14px);
+  transition: background 1s, color 1s, transform 0.5s;
+}
+.skillcontainer .wrapper .card .circle{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+.skillcontainer .card .circle .box1,
+.skillcontainer .card .circle .box1 span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.skillcontainer .card .circle .box1{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.skillcontainer .card .circle:hover .box1{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.skillcontainer .card .circle .box1 span,
+.skillcontainer .wrapper .card .text{
+  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
+  background: -webkit-linear-gradient(left, aqua, #ff00d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skillcontainer .circle .box1 span{
+  font-size: 38px;
+  font-family: sans-serif;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.skillcontainer .card .circle:hover .box1 span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.skillcontainer .card .text{
+  font-size: 20px;
+  font-weight: 600;
+}
+@media(max-width: 753px){
+  .skillcontainer .wrapper{
+    max-width: 700px;
+  }
+  .skillcontainer  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .skillcontainer .wrapper{
+    max-width: 500px;
+  }
+  .skillcontainer .wrapper .card{
+    width: 100%;
+  }
+}
+/* ========= my skills end ========= --> */
+/* ========== latest project start ======== */
+*{
+  box-sizing: border-box;
+}
+.latest-project .latest-project-nam{
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  padding:4% 0% 0% 44%;
+}
+.latest-project .latest-project-nam b{
+  color: aqua;
+}
+.latest-project-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(30, 37, 57, 0.973);
+  padding-top: 150px;
+}
+.latest-project .latest-project-a{
+  position: relative;
+  width: 350px;
+  height: 250px;
+  margin: 50px 20px 70px;
+}
+.latest-project .latest-project-a:hover{
+  /* box-shadow: 5px 5px 10px 1px rgb(227, 7, 124), -5px -5px 10px 1px aquamarine;  */
+}
+.latest-project .latest-project-a::before{
+  content: '';
+  bottom: -70px;
+  width: 100%;
+  height: 60px;
+  background:radial-gradient(rgba(0,0,0,0.15)transparent,transparent);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.latest-project .latest-project-a:hover::before{
+  opacity: 0.8;
+  transform: scale(0.8);
+}
+.latest-project .latest-project-a .shape{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: 0.5s;
+}
+.latest-project .latest-project-a :hover .shape{
+  transform: translateY(-30px);
+}
+.latest-project .latest-project-a .shape img{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.latest-project .latest-project-a .shape .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(90deg, black, rgba(3, 169, 244, 0.5));
+  /* background: linear-gradient(45deg,#03a9f4,rgba(3,169,244,0.5)); */
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+.latest-project .latest-project-a:hover .shape .content{
+  opacity: 1;
+}
+/* ========== latest project end ========= */
+/*  ========= contact me start ========== */
+.contact-me {
+  background-color: hsl(224, 16%, 27%);
+  padding-top: 50px;
+}
+.contact-me span {
+  font-size: 40px;
+  color: white;
+}
+.contact-me span b {
+  color: aqua;
+}
+.contact-part {
+  margin-top: -150px;
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 90%;
+  max-width: 600px;
+}
+.contact-part-a {
+  margin-bottom: 30px;
+  position: relative;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  font-size: 17px;
+  border-radius: 10px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: aqua;  
+  cursor: text;
+  transition: 0.2s;
+}
+button {
+  padding: 10px 0;
+  color: aqua;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  font-size: 20px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row .contact-part-a {
+  flex-basis: 48%;
+}
+/*  ========= contact me end ========== */
